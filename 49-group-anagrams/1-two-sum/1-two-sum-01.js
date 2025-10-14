@@ -7,9 +7,9 @@ var twoSum = function (nums, target) {
   const mymap = new Map();
 
   for (let i = 0; i < nums.length; i++) {
-    const reqV = target - nums[i];
-    if (mymap.has(reqV)) {
-      return [mymap.get(reqV), i];
+    const difference = target - nums[i];
+    if (mymap.has(difference)) {
+      return [mymap.get(difference), i];
     } else {
       mymap.set(nums[i], i);
     }
