@@ -1,19 +1,15 @@
-/**
- * @param {string} s
- * @return {boolean}
- */
-var isValid = function (s) {
-  const arr = s.split("");
+const isValid = function (s: string) {
+  const arr: Array<string> = s.split("");
   if (arr.length % 2 !== 0) return false;
 
-  const myStack = [];
-  const myMap = {
-    ')': '(',
-    '}': '{',
-    ']': '[',
+  const myStack: Array<String> = [];
+  const myMap: { [key: string]: string } = {
+    ")": "(",
+    "}": "{",
+    "]": "[",
   };
 
-  for (ch of arr) {
+  for (const ch of arr) {
     if (myMap[ch]) {
       if (myStack.pop() !== myMap[ch]) {
         return false;

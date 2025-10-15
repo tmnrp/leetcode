@@ -1,9 +1,4 @@
-/**
- * @param {string} s
- * @param {string} t
- * @return {boolean}
- */
-var isAnagram = function (s, t) {
+const isAnagram = function (s: string, t: string) {
   if (s.length !== t.length) {
     return false;
   }
