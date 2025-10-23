@@ -1,4 +1,4 @@
-const longestCommonPrefix = function (strs: Array<string>) {
+const longestCommonPrefix = function (strs: any) {
   strs = strs.sort();
   const op: Array<string> = [];
   for (let i = 0; i < strs[0].length; i++) {

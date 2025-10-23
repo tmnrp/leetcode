@@ -1,4 +1,4 @@
-const isAnagram = function (s: string, t: string) {
+const isAnagram = function (s: any, t: any) {
   if (s.length !== t.length) {
     return false;
   }

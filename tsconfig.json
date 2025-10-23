@@ -19,6 +19,7 @@
 
     // Other Outputs
     "sourceMap": true,
+    "outDir": "dist",
     "declaration": true,
     "declarationMap": true,
 

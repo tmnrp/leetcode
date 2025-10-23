@@ -1,8 +1,8 @@
-const twoSum = function (nums, target) {
+const twoSum = function (nums: Array<number>, target: number) {
   const mymap = new Map();
 
   for (let i = 0; i < nums.length; i++) {
-    const difference = target - nums[i];
+    const difference = target - (nums[i] || 0);
     if (mymap.has(difference)) {
       return [mymap.get(difference), i];
     } else {
