@@ -34,3 +34,4 @@ console.log(topKFrequent([6, 6, 11, 9, 12, 7, 7], 2));
 console.log(topKFrequent([1, 1, 1, 2, 2, 3], 2));
 console.log(topKFrequent([1], 1));
 console.log(topKFrequent([1, 2, 1, 2, 1, 2, 3, 1, 3, 2], 2));
+console.log(topKFrequent([4, 4, 4, 5, 5, 5, 6, 7], 2));
