@@ -31,3 +31,12 @@ function addBinary(a: string, b: string): string {
 }
 
 console.log(addBinary("11", "1")); //a = "11", b = "1"
+console.log(addBinary("1010", "1011")); //a = "1010", b = "1011"
+/*
+011
+11
+10
+------
+001
+
+*/
